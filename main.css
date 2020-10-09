@@ -11,7 +11,7 @@ body {
     margin: auto;
 }
 
-.grid-item {
+.grid-item#g1 {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
@@ -19,7 +19,7 @@ body {
     text-align: center;
 }
 
-.grid-item2 {
+.grid-item#g2 {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
@@ -27,7 +27,7 @@ body {
     text-align: center;
 }
 
-.grid-item3 {
+.grid-item#g3 {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
@@ -35,7 +35,7 @@ body {
     text-align: center;
 }
 
-.grid-item4 {
+.grid-item#g4 {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
@@ -43,7 +43,7 @@ body {
     text-align: center;
 }
 
-.grid-item5 {
+.grid-item#g5 {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
@@ -51,7 +51,7 @@ body {
     text-align: center;
 }
 
-.grid-item6 {
+.grid-item#g6 {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
@@ -59,7 +59,7 @@ body {
     text-align: center;
 }
 
-.grid-item7 {
+.grid-item#g7 {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
@@ -67,7 +67,7 @@ body {
     text-align: center;
 }
 
-.grid-item8 {
+.grid-item#g8 {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
@@ -75,7 +75,7 @@ body {
     text-align: center;
 }
 
-.grid-item9 {
+.grid-item#g9 {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
@@ -105,50 +105,50 @@ body {
 }
 
 
-/* .grid-container:hover {
+ .grid-container:hover {
     background-color: #0099cc;
     margin: auto;
     animation: shake 0.5s;
     animation-iteration-count: infinite;
-}
+} 
 /* /* @keyframes shake {
     
     /* 50% { transform: translate(30px, 20px) rotate(0deg); }
      */  
 
-.grid-item5:hover {
+.grid-item#g5:hover {
     background-color: #bf4129;
 }
 
-.grid-item6:hover {
+.grid-item#g6:hover {
     background-color: #666f21;
 }
 
-.grid-item:hover {
+.grid-item#g1:hover {
     background-color: #1400cc;
 }
 
-.grid-item3:hover {
+.grid-item#g3:hover {
     background-color: #2682a4;
 }
 
-.grid-item2:hover {
+.grid-item#g2:hover {
     background-color: #cc8500dc;
 }
 
-.grid-item4:hover {
+.grid-item#g4:hover {
     background-color: #9e1c43;
 }
 
-.grid-item7:hover {
+.grid-item#g7:hover {
     background-color: #4b9b79;
 }
 
-.grid-item8:hover {
+.grid-item#g8:hover {
     background-color: #2682a4;
 }
 
-.grid-item9:hover {
+.grid-item#g9:hover {
     background-color: #c551ee;
 }
 .startbutton:hover {
