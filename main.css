@@ -9,6 +9,7 @@ body {
     background-color: #f321b4;
     padding: 10px;
     margin: auto;
+    cursor: move;
 }
 
 .grid-item#g1 {
@@ -166,7 +167,8 @@ height: 500px;
 width:  500px;
 }
 
-//Letters turn red when a player wins.  
+
 .winwin{
     color: red;
 }
+
