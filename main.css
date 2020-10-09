@@ -1,0 +1,172 @@
+body {
+    background-color: lightblue;
+}
+
+/* Grid of seperate squares */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #f321b4;
+    padding: 10px;
+    margin: auto;
+}
+
+.grid-item. {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item2 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item3 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item4 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item5 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item6 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item7 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item8 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item9 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Gives top border */
+
+#navbar,
+#footer {
+    width: 100%;
+    height: 100px;
+    background-color: midnightblue;
+    position: fixed
+}
+
+#navbar:hover {
+    background-color: #eed025;
+}
+#footer:hover {
+    background-color: 	#9840e3;
+}
+
+#footer {
+    bottom: 0
+}
+
+
+/* .grid-container:hover {
+    background-color: #0099cc;
+    margin: auto;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+/* /* @keyframes shake {
+    
+    /* 50% { transform: translate(30px, 20px) rotate(0deg); }
+     */  
+
+.grid-item5:hover {
+    background-color: #bf4129;
+}
+
+.grid-item6:hover {
+    background-color: #666f21;
+}
+
+.grid-item:hover {
+    background-color: #1400cc;
+}
+
+.grid-item3:hover {
+    background-color: #2682a4;
+}
+
+.grid-item2:hover {
+    background-color: #cc8500dc;
+}
+
+.grid-item4:hover {
+    background-color: #9e1c43;
+}
+
+.grid-item7:hover {
+    background-color: #4b9b79;
+}
+
+.grid-item8:hover {
+    background-color: #2682a4;
+}
+
+.grid-item9:hover {
+    background-color: #c551ee;
+}
+.startbutton:hover {
+    position:relative;
+    top:-15px;
+    left:-35px;
+    width:700px;
+    height:auto;
+    display:block;
+    z-index:999;
+  
+}
+.grid-container {
+height: 500px;
+width:  500px;
+}
+
+//Letters turn red when a player wins.  
+.winwin{
+    color: red;
+}
