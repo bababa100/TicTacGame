@@ -11,21 +11,20 @@ const winningSquares = [
 // Returns array of querylist. Instead of just querylist grid is called during enable/disableListeners
 const grid = () => Array.from(document.getElementsByClassName("grid-item"));
 //Convert ids from strings into numbers. Remove "g" from name
-const gridItemId = () => Number.parseInt(_qe1.id.replace("g", ""));
+
+const gridItemId = (qEl) => Number.parseInt(qEl.id.replace("q", ""));
 //Detect Empty squares. Check through array for no chars. Build an array of empty squares and return.Must pass test to be added to array of empty squares.
-const openSquares = () =>
-  grid().filter(
-    (_qe1) => _qe1.innertext === arr[1].innerText && _qe1.innerText !== ""
-  );
+const openSquares = () => grid().filter((_qEl) => _qEl.innertext === "");
 // Check if squares have matching chars. Dont return empty strings.
+
 const sameSquares = (arr) =>
   arr.every(
-    (_qE1) => _qE1.innerText === arr[1].innertext && _qE1.innerText !== ""
+    (_qEl) => _qEl.innerText === arr[1].innerText && _qEl.innerText !== ""
   );
-
 // letter is x or o.
 const altTurn = (index, letter) => (grid()[index].innerTxet = letter);
-const oppChoice = () => 1;
+const oppChoice = () =>
+  gridItemId(openSquares()[Math.floor(Math.random() + openSquares().length)]);
 const oppTurn = () => {
   disableListeners();
   setTimeout(() => {
@@ -35,16 +34,17 @@ const oppTurn = () => {
 };
 // Shows id of square clicked.  First will call altTurn
 const clickFn = (event) => {
-  altTurn(qNumId($event.target), "x");
+  altTurn(gridItemId(event.target), "x");
   oppTurn();
-  console.log(event.target);
-  //Add eventListeners to check each element. Listener Added to quadrand element. Listen for "click", Run clickFn
-  const enableListeners = () =>
-    grid().forEach((_qe1) => _qe1.addEventListener("click", clickFn));
-  // Used for when not players turn. Disengage mover. Remove clickFn from listener
-  const disableListeners = () =>
-    grid().forEach((_qe1) => _qe1.removeEventListener("click", clickFn));
 };
+
+//Add eventListeners to check each element. Listener Added to quadrand element. Listen for "click", Run clickFn
+const enableListeners = () =>
+  grid().forEach((_qe1) => _qe1.addEventListener("click", clickFn));
+// Used for when not players turn. Disengage mover. Remove clickFn from listener
+const disableListeners = () =>
+  grid().forEach((_qe1) => _qe1.removeEventListener("click", clickFn));
+
 enableListeners();
 
 console.log("Ready to work!");
