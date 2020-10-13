@@ -1,15 +1,15 @@
 const winningSquares = [
-  [1, 2, 3],
-  [4, 5, 6],
-  [7, 8, 9],
+  [0, 1, 2],
+  [3, 4, 5],
+  [6, 7, 8],
+  [0, 4, 8],
+  [2, 4, 6],
+  [0, 3, 6],
   [1, 4, 7],
-  [2, 4, 8],
-  [3, 6, 9],
-  [1, 5, 9],
-  [3, 5, 7],
+  [2, 5, 8],
 ];
 // Returns array of querylist. Instead of just querylist grid is called during enable/disableListeners
-const grid = () => Array.from(document.getElementsByClassName("grid-item"));
+const grid = () => Array.from(document.getElementsByClassName("q"));
 //Convert ids from strings into numbers. Remove "g" from name
 
 const gridItemId = (qEl) => Number.parseInt(qEl.id.replace("q", ""));
@@ -19,31 +19,49 @@ const openSquares = () => grid().filter((_qEl) => _qEl.innertext === "");
 
 const sameSquares = (arr) =>
   arr.every(
-    (_qEl) => _qEl.innerText === arr[1].innerText && _qEl.innerText !== ""
+    (_qEl) => _qEl.innerText === arr[0].innerText && _qEl.innerText !== ""
   );
 // letter is x or o.
-const altTurn = (index, letter) => (grid()[index].innerTxet = letter);
+const takeTurn = (index, letter) => (grid()[index].innerText = letter);
 const oppChoice = () =>
   gridItemId(openSquares()[Math.floor(Math.random() + openSquares().length)]);
+
+const startOver = (winningSquares) => {
+  winningSquares.forEach((_qEl) => _qEl.classList.add("winner"));
+  disableListeners();
+};
+
+const checkWin = () => {
+  let victory = false;
+  winningSquares.forEach((_c) => {
+    const _grid = grid();
+    const sequence = [_grid[_c[0]], _grid[_c[1]], _grid[_c[2]]];
+    if (sameSquares(sequence)) {
+      victory = true;
+      startOver(sequence);
+    }
+  });
+  return victory;
+};
 const oppTurn = () => {
   disableListeners();
   setTimeout(() => {
-    altTurn(oppChoice(), "o");
-    enableListeners();
+    takeTurn(oppChoice(), "o");
+    if (checkWin()) enableListeners();
   }, 1000);
 };
-// Shows id of square clicked.  First will call altTurn
+// Shows id of square clicked.  First will call takeTurn
 const clickFn = (event) => {
-  altTurn(gridItemId(event.target), "x");
-  oppTurn();
+  takeTurn(gridItemId(event.target), "x");
+  if (checkWin()) oppTurn();
 };
 
 //Add eventListeners to check each element. Listener Added to quadrand element. Listen for "click", Run clickFn
 const enableListeners = () =>
-  grid().forEach((_qe1) => _qe1.addEventListener("click", clickFn));
+  grid().forEach((qEl) => qEl.addEventListener("click", clickFn));
 // Used for when not players turn. Disengage mover. Remove clickFn from listener
 const disableListeners = () =>
-  grid().forEach((_qe1) => _qe1.removeEventListener("click", clickFn));
+  grid().forEach((qEl) => qEl.removeEventListener("click", clickFn));
 
 enableListeners();
 
