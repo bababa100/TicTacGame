@@ -12,3 +12,4 @@ TicTacToe game is a challenge to match 3 of the same letters in 3 consecutive bo
 
 <li>Game ends when a player matching 3 of the same letters in 3 consecutive boxes.</li>
 <h2> Final Solution</h2>
+<img width="1439" alt="tictacShot" src="https://user-images.githubusercontent.com/71783023/95924415-27847f80-0d7d-11eb-9486-72b1caeceba1.png">
