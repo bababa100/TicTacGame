@@ -24,3 +24,6 @@ Online Tools:
   <li> http://friv.games/tic-tac-toe/</li>
   </ul>
   
+<h1>TicTacGame User Stories</h1>
+
+<p><a href="https://github.com/bababa100/TicTacGame/issues/2#issue-721048029">User Stories!</a></p>
