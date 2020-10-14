@@ -2,7 +2,7 @@
 Tic-Tac-Toe Game made with Html, CSS, Javascript.
 <h2> Purpose</h2>
 Be creative and work through some programming challenges building a familiar game.  TicTacToe game is a challenge to match 3 of the same letters in 3 consecutive boxes. Two players move one at a time.  One player uses the "X" char and the other player uses "O" char.  The game is over when a player has their char in three consecutive squares.
-<h1> MVP </h1>
+<h1> MVP User Stories </h1>
 <ul>
   <li>
     Simple 9 square interface with colors related to color palette</li>
