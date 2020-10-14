@@ -22,6 +22,7 @@ Online Tools:
   <li>https://www.w3schools.com/</li>
   <li> https://stackoverflow.com/</li>
   <li>http://friv.games/tic-tac-toe/</li>
+  <li>https://medium.com/javascript-in-plain-english/the-worlds-most-empowering-tic-tac-toe-javascript-tutorial-a889e4c20883</li>
   </ul>
   <ul>
   <h3>Video Tutorials</h3>
@@ -29,6 +30,7 @@ Online Tools:
   <li>https://www.youtube.com/watch?v=P2TcQ3h0ipQ</li>
   <li>https://www.youtube.com/watch?v=yaPUl31nypk</li>
   <li>https://www.youtube.com/watch?v=2UR8gSnRU28</li>
+  <li>https://youtu.be/gQb3dE-y1S4</li>
   </ul>
   
 <h1>TicTacGame User Stories</h1>
@@ -40,6 +42,6 @@ Online Tools:
 <p>I was able to use W3schools.com for ideas how to arrange and format squares, provide color, hover functionality, and label squares for selection. </p>
 <p> After designing the UI I started the Javascript portion to satisfy the User Story/Requirements.  I was able to use Javascript to distiguish the squares and register a click for Player selection.  </p>
   <h2>Challenges</h2>
-  I ran into issues with using Javascript to get opponent side to play.  After getting stuck I researched tutorials and webpages to get examples and to see if I could get the game going by intergrating other coding ideas with my code. I was able to find examples and they were too advanced to understand well enough to get ideas for my own code.  
+  I ran into issues with using Javascript to get opponent side to play.  After getting stuck I researched tutorials and webpages to get examples I could use to get the game working.  I was able to intergrate other code with mine and had some successes. But the code was a bit too advanced to maintain through the additional requirements.  
 <h2>Unsolved Problems</h2>
-<p>I worked with an instructor to get a better understanding of what the code was doing. I started the Javascript coding to work through again. As of now, the HTML and CSS is working well with hover effects.  Javascript will require update to get Website fully functional.   </p> 
+<p>I worked with an instructor to get a better understanding of what the code was doing. He mentioned the code was a bit advanced for what we have been learning.  Using what I learned from my lessons, and the research Ive done while building this game, Ive restarted the Javascript coding and is ongoing. As of now, the HTML and CSS is working well with hover effects.  I am adding updates to Javascript to get Website fully functional.   </p> 
